@@ -1,4 +1,4 @@
-#!/hpcf/apps/python/install/2.7.13/bin/python
+#!/usr/bin/env python
 import sys
 import os
 import pandas as pd
