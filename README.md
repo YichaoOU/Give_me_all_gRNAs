@@ -33,4 +33,24 @@ You need to have the following program installed.
 
 ## Usage
 
+```
+usage: find_all_gRNA.py [-h] -f BED_FILE [-e EXTEND] [-l SGRNA_LENGTH]
+                        [-g GENOME_FA] [--PAM PAM] [-o OUTPUT]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f BED_FILE, --bed_file BED_FILE
+                        input regions to look for gRNAs (default: None)
+  -e EXTEND, --extend EXTEND
+                        extend search area to left and right (default: 100)
+  -l SGRNA_LENGTH, --sgRNA_length SGRNA_LENGTH
+                        sgRNA_length (default: 20)
+  -g GENOME_FA, --genome_fa GENOME_FA
+                        genome fasta (default:
+                        /home/yli11/Data/Human/hg19/fasta/hg19.fa)
+  --PAM PAM             PAM sequence (default: NGG)
+  -o OUTPUT, --output OUTPUT
+                        output bed file name (default: candidate_gRNA.bed)
+```
+
 `python find_all_gRNA.py -f input.bed`
