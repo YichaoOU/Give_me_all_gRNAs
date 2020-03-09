@@ -54,3 +54,14 @@ optional arguments:
 ```
 
 `python find_all_gRNA.py -f input.bed`
+
+## Custom genome
+
+You can use `-g` option to input your own genome, make sure the chromosome name not starting with numbers, otherwise, casoffinder will fail.
+
+Example command will be like: `python find_all_gRNA.py -f CTCF_20copy.fimo.bed -e 0 -g ../lenti_CL20i4r.fa`
+
+
+
+
+
