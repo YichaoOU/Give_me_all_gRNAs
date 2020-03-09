@@ -18,7 +18,7 @@ def my_args():
 
 	mainParser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 	mainParser.add_argument('-f','--bed_file',  help="input regions to look for gRNAs", required=True)
-	mainParser.add_argument('-e','--extend',  help="extend search area to left and right", default=100)
+	mainParser.add_argument('-e','--extend',  help="extend search area to left and right", default=100,type=int)
 	mainParser.add_argument('-l','--sgRNA_length',  help="sgRNA_length", default=20)
 	mainParser.add_argument('-g','--genome_fa',  help="genome fasta", default="/home/yli11/Data/Human/hg19/fasta/hg19.fa")
 	mainParser.add_argument('--PAM',  help="PAM sequence", default="NGG")
